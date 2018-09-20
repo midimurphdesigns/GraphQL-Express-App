@@ -1,11 +1,11 @@
 const graphql = require("graphql");
-const { GraphQLObjectType } = graphql;
+const { GraphQLObjectType, GraphQLString, GraphQLInt } = graphql;
 
 const UserType = new GraphQLObjectType({
   name: "User",
   fields: {
-    id: { type: },
-    firstName: { type: },
-    age: { type: }
+    id: { type: GraphQLString },
+    firstName: { type: GraphQLString },
+    age: { type: GraphQLInt }
   }
 });
